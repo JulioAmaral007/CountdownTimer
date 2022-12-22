@@ -67,11 +67,11 @@ export function CyclesContextProvider({
     return 0
   })
 
-  useEffect(() => {
+  /* useEffect(() => {
     const stateJSON = JSON.stringify(cyclesState)
 
     localStorage.setItem('@countdown-timer:cycles-state-1.0.0', stateJSON)
-  }, [cyclesState])
+  }, [cyclesState]) */
 
   function setSecondsPassed(seconds: number) {
     setAmountSecondsPassed(seconds)
