@@ -53,6 +53,10 @@ export function CyclesContextProvider({
       if (storedStateAsJSON) {
         return JSON.parse(storedStateAsJSON)
       }
+      return {
+        cycles: [],
+        activeCycleId: null,
+      }
     },
   )
 
@@ -67,11 +71,11 @@ export function CyclesContextProvider({
     return 0
   })
 
-  /* useEffect(() => {
+  useEffect(() => {
     const stateJSON = JSON.stringify(cyclesState)
 
     localStorage.setItem('@countdown-timer:cycles-state-1.0.0', stateJSON)
-  }, [cyclesState]) */
+  }, [cyclesState])
 
   function setSecondsPassed(seconds: number) {
     setAmountSecondsPassed(seconds)
