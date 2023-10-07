@@ -10,6 +10,10 @@ export const HistoryContainer = styled.main`
   h1 {
     font-size: 1.5rem;
     color: ${(props) => props.theme['gray-100']};
+
+    @media screen and (max-width: 500px) {
+      font-size: 1rem;
+    }
   }
 `
 
@@ -58,7 +62,11 @@ export const HistoryList = styled.div`
         padding-right: 1.5rem;
         }
       }
+      @media screen and (max-width: 500px) {
+        min-width: 0;
+      }
   }
+
 `
 
 const STATUS_COLORS = {

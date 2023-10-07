@@ -43,6 +43,10 @@ export const StartCountdownButton = styled(BaseCountdownButton)`
   &:not(:disabled):hover {
     background: ${(props) => props.theme['green-700']};
   }
+
+  @media screen and (max-width: 500px) {
+    width: 50%;
+  }
 `
 
 export const StopCountdownButton = styled(BaseCountdownButton)`
@@ -50,5 +54,9 @@ export const StopCountdownButton = styled(BaseCountdownButton)`
 
   &:not(:disabled):hover {
     background: ${(props) => props.theme['red-700']};
+  }
+
+  @media screen and (max-width: 500px) {
+    width: 50%;
   }
 `
